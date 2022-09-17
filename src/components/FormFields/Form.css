@@ -1,15 +1,15 @@
-.flex-form-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
+.flex-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
-.title-txt{
-    color: #1976d2;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 2rem;
-    text-align: center;
+.title-txt {
+  color: #1976d2;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  text-align: center;
 }

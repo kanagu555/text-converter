@@ -1,11 +1,13 @@
 import { Button } from "@mui/material";
 import React from "react";
-import './Button.css'
+import "./Button.css";
 
 const CamelCaseBtn = () => {
   return (
     <div>
-      <Button style={{ textTransform: "none" }} className="btn-props" variant="contained">Camel Case</Button>
+      <Button style={{ textTransform: "none" }} variant="contained">
+        Camel Case
+      </Button>
     </div>
   );
 };

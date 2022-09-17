@@ -5,9 +5,11 @@ const InputTextForm = () => {
   return (
     <div>
       <TextField
+        style={{ width: 500 }}
         placeholder="Enter your input text"
         multiline
         rows={10}
+        autoFocus
       />
     </div>
   );
