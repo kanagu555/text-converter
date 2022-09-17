@@ -1,13 +1,16 @@
-import React from 'react';
-import InputTextForm from './InputTextForm';
-import OutputTextForm from './OutputTextForm';
+import React from "react";
+import InputTextForm from "./InputTextForm";
+import OutputTextForm from "./OutputTextForm";
+import './Form.css'
 
 function App() {
   return (
     <div>
-      <h1>Text Converter</h1>
-      <InputTextForm />
-      <OutputTextForm />
+      <h1 className='title-txt'>Text Converter</h1>
+      <div className="flex-form-container">
+        <InputTextForm />
+        <OutputTextForm />
+      </div>
     </div>
   );
 }

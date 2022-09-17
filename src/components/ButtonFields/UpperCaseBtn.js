@@ -4,7 +4,7 @@ import React from "react";
 const UpperCaseBtn = () => {
   return (
     <div>
-      <Button variant="contained">UPPER CASE</Button>
+      <Button style={{ textTransform: "none" }} variant="contained">UPPER CASE</Button>
     </div>
   );
 };

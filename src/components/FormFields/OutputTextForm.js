@@ -5,9 +5,9 @@ const OutputTextForm = () => {
   return (
     <div>
       <TextField
-        label="Enter your input text"
+        placeholder="Your output text"
         multiline
-        rows={7}
+        rows={10}
       />
     </div>
   );

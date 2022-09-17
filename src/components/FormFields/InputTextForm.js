@@ -7,7 +7,7 @@ const InputTextForm = () => {
       <TextField
         placeholder="Enter your input text"
         multiline
-        rows={7}
+        rows={10}
       />
     </div>
   );

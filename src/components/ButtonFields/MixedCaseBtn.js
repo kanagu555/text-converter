@@ -4,7 +4,7 @@ import React from "react";
 const MixedCaseBtn = () => {
   return (
     <div>
-      <Button variant="contained">MiXeD CaSe</Button>
+      <Button style={{ textTransform: "none" }} variant="contained">MiXeD CaSe</Button>
     </div>
   );
 };
