@@ -12,10 +12,6 @@ const InputTextForm = () => {
     setInputValue(e.target.value);
   };
 
-  // useEffect(() => {
-  //   console.log('inputValue:', inputValue);
-  //   },[inputValue])
-
   return (
     <div>
       <TextField
