@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import TextField from "@mui/material/TextField";
+import { AppContext } from "./../../App";
+
 
 const InputTextForm = () => {
+  const inputTextFormContext = useContext(AppContext)
+  const [inputValue, setInputValue] = inputTextFormContext
+
+
+  const inputFunc = (e) => {
+    setInputValue(e.target.value);
+  };
+
+  // useEffect(() => {
+  //   console.log('inputValue:', inputValue);
+  //   },[inputValue])
+
   return (
     <div>
       <TextField
@@ -10,6 +24,8 @@ const InputTextForm = () => {
         multiline
         rows={10}
         autoFocus
+        value={inputValue}
+        onChange={inputFunc}
       />
     </div>
   );

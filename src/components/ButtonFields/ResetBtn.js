@@ -1,10 +1,20 @@
 import { Button } from '@mui/material'
-import React from 'react'
+import React, { useContext } from 'react'
+import {AppContext} from './../../App'
 
 function ResetBtn() {
+
+  const resetBtnContext = useContext(AppContext)
+  const [setInputValue, setOutputValue] = [resetBtnContext[1], resetBtnContext[3]]
+
+  const resetFunc = () => {
+    setInputValue('')
+    setOutputValue('')
+  }
+
   return (
     <div>
-        <Button variant="contained" color="error">Reset</Button>
+        <Button variant="contained" color="error" onClick={resetFunc}>Reset</Button>
     </div>
   )
 }

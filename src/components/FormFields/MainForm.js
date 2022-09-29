@@ -3,6 +3,7 @@ import InputTextForm from "./InputTextForm";
 import OutputTextForm from "./OutputTextForm";
 import ResetBtn from '../ButtonFields/ResetBtn'
 import "./Form.css";
+import CopyBtn from "../ButtonFields/CopyBtn";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <div className="flex-form-container">
         <InputTextForm />
         <ResetBtn />
+        <CopyBtn />
         <OutputTextForm />
       </div>
     </div>
