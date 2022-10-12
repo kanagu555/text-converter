@@ -2,6 +2,7 @@ import React, { createContext, useState } from "react";
 import MainBtn from "./components/ButtonFields/MainBtn";
 import MainForm from "./components/FormFields/MainForm";
 import "./App.css";
+import Footer from "./components/Footer/Footer";
 
 export const AppContext = createContext();
 
@@ -16,6 +17,7 @@ function App() {
       >
         <MainForm />
         <MainBtn />
+        <Footer />
       </AppContext.Provider>
     </div>
   );

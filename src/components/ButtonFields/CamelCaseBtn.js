@@ -13,7 +13,7 @@ const CamelCaseBtn = () => {
   }
 
   return (
-    <div>
+    <div className="btn-margin">
       <Button style={{ textTransform: "none" }} variant="contained" onClick={toCamelCase}>
         camelCase
       </Button>

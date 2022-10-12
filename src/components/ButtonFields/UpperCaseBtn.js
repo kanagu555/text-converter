@@ -14,7 +14,7 @@ const UpperCaseBtn = () => {
   };
 
   return (
-    <div>
+    <div className="btn-margin">
       <Button
         style={{ textTransform: "none" }}
         variant="contained"
