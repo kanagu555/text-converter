@@ -13,7 +13,7 @@ function ResetBtn() {
   }
 
   return (
-    <div>
+    <div className="btn-margin">
         <Button variant="contained" color="error" onClick={resetFunc}>Reset</Button>
     </div>
   )

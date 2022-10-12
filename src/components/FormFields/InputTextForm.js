@@ -13,7 +13,7 @@ const InputTextForm = () => {
   };
 
   return (
-    <div>
+    <div className="form-margin">
       <TextField
         style={{ width: 500 }}
         placeholder="Enter your input text"

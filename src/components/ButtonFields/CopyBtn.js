@@ -12,7 +12,7 @@ function CopyBtn() {
   }
 
   return (
-    <div>
+    <div className="btn-margin">
         <Button variant="contained" color="success" onClick={copyFunc}>Copy</Button>
     </div>
   )

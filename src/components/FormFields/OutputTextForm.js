@@ -7,7 +7,7 @@ const OutputTextForm = () => {
   const outputValue = outputTextFormContext[2];
 
   return (
-    <div>
+    <div className="form-margin">
       <TextField
         style={{ width: 500 }}
         placeholder="Your output text"

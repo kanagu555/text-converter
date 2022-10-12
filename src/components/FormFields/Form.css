@@ -13,3 +13,13 @@
   font-size: 2rem;
   text-align: center;
 }
+
+@media only screen and (max-width: 465px) {
+  .flex-form-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-margin {
+    margin-top: 1rem;
+  }
+}
