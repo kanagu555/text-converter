@@ -15,7 +15,7 @@ const CamelCaseBtn = () => {
   return (
     <div>
       <Button style={{ textTransform: "none" }} variant="contained" onClick={toCamelCase}>
-        Camel Case
+        camelCase
       </Button>
     </div>
   );
