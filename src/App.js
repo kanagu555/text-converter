@@ -9,11 +9,15 @@ export const AppContext = createContext();
 function App() {
   const [inputValue, setInputValue] = useState("");
   const [outputValue, setOutputValue] = useState("");
+  const [alertMessage, setAlertMessage] = useState({
+    lowerCaseSuccess: false,
+  });
+
 
   return (
     <div className="bg-height">
       <AppContext.Provider
-        value={[inputValue, setInputValue, outputValue, setOutputValue]}
+        value={[inputValue, setInputValue, outputValue, setOutputValue, setAlertMessage, alertMessage]}
       >
         <MainForm />
         <MainBtn />

@@ -4,11 +4,14 @@ import "./Button.css";
 import { AppContext } from "../../App";
 
 const LowerCaseBtn = () => {
-  const LowerCaseBtnContext = useContext(AppContext);
-  const [inputValue, setOutputValue] = [LowerCaseBtnContext[0],LowerCaseBtnContext[3]];
-
+  const lowerCaseBtnContext = useContext(AppContext);
+  const [inputValue, setOutputValue, setLowerCaseMsg] = [lowerCaseBtnContext[0],lowerCaseBtnContext[3],lowerCaseBtnContext[4]];
+  
   const toLower = () => {
+    if(inputValue){
     setOutputValue(inputValue.toLowerCase())
+    setLowerCaseMsg(prevState => ({...prevState, lowerCaseSuccess: true}))
+    }
   };
 
   return (
