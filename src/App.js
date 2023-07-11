@@ -11,6 +11,7 @@ function App() {
   const [outputValue, setOutputValue] = useState("");
   const [alertMessage, setAlertMessage] = useState({
     lowerCaseSuccess: false,
+    upperCaseSuccess: false,
   });
 
 

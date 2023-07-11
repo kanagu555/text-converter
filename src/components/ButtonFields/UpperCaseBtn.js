@@ -4,13 +4,20 @@ import { AppContext } from "../../App";
 
 const UpperCaseBtn = () => {
   const upperCaseBtnContext = useContext(AppContext);
-  const [inputValue, setOutputValue] = [
+  const [inputValue, setOutputValue, setUpperCaseMsg] = [
     upperCaseBtnContext[0],
     upperCaseBtnContext[3],
+    upperCaseBtnContext[4],
   ];
 
   const toUpper = () => {
-    setOutputValue(inputValue.toUpperCase());
+    if (inputValue) {
+      setOutputValue(inputValue.toUpperCase());
+      setUpperCaseMsg((prevState) => ({
+        ...prevState,
+        upperCaseSuccess: true,
+      }));
+    }
   };
 
   return (
