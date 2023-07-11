@@ -20,6 +20,10 @@ const CamelCaseBtn = () => {
       setCamelCaseMsg((prevState) => ({
         ...prevState,
         camelCaseSuccess: true,
+        lowerCaseSuccess: false,
+        upperCaseSuccess: false,
+        mixedCaseSuccess: false,
+        inverseCaseSuccess: false,
       }));
     }
   };

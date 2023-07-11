@@ -21,6 +21,10 @@ const InverseCase = () => {
       setInverseCaseMsg((prevState) => ({
         ...prevState,
         inverseCaseSuccess: true,
+        lowerCaseSuccess: false,
+        upperCaseSuccess: false,
+        camelCaseSuccess: false,
+        mixedCaseSuccess: false,
       }));
     }
   };

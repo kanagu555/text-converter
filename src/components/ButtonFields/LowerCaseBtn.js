@@ -5,12 +5,23 @@ import { AppContext } from "../../App";
 
 const LowerCaseBtn = () => {
   const lowerCaseBtnContext = useContext(AppContext);
-  const [inputValue, setOutputValue, setLowerCaseMsg] = [lowerCaseBtnContext[0],lowerCaseBtnContext[3],lowerCaseBtnContext[4]];
-  
+  const [inputValue, setOutputValue, setLowerCaseMsg] = [
+    lowerCaseBtnContext[0],
+    lowerCaseBtnContext[3],
+    lowerCaseBtnContext[4],
+  ];
+
   const toLower = () => {
-    if(inputValue){
-    setOutputValue(inputValue.toLowerCase())
-    setLowerCaseMsg(prevState => ({...prevState, lowerCaseSuccess: true}))
+    if (inputValue) {
+      setOutputValue(inputValue.toLowerCase());
+      setLowerCaseMsg((prevState) => ({
+        ...prevState,
+        lowerCaseSuccess: true,
+        upperCaseSuccess: false,
+        camelCaseSuccess: false,
+        mixedCaseSuccess: false,
+        inverseCaseSuccess: false,
+      }));
     }
   };
 

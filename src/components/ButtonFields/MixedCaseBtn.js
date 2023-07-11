@@ -20,6 +20,10 @@ const MixedCaseBtn = () => {
       setMixedCaseMsg((prevState) => ({
         ...prevState,
         mixedCaseSuccess: true,
+        lowerCaseSuccess: false,
+        upperCaseSuccess: false,
+        camelCaseSuccess: false,
+        inverseCaseSuccess: false,
       }));
     }
   };

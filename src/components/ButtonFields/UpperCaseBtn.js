@@ -16,6 +16,10 @@ const UpperCaseBtn = () => {
       setUpperCaseMsg((prevState) => ({
         ...prevState,
         upperCaseSuccess: true,
+        lowerCaseSuccess: false,
+        camelCaseSuccess: false,
+        mixedCaseSuccess: false,
+        inverseCaseSuccess: false,
       }));
     }
   };
