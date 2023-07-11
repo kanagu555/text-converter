@@ -5,16 +5,23 @@ import { AppContext } from "../../App";
 
 const CamelCaseBtn = () => {
   const camelCaseBtnContext = useContext(AppContext);
-  const [inputValue, setOutputValue] = [
+  const [inputValue, setOutputValue, setCamelCaseMsg] = [
     camelCaseBtnContext[0],
     camelCaseBtnContext[3],
+    camelCaseBtnContext[4],
   ];
 
   const toCamelCase = () => {
-    const camelOutput = inputValue
-      .toLowerCase()
-      .replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
-    setOutputValue(camelOutput);
+    if (inputValue) {
+      const camelOutput = inputValue
+        .toLowerCase()
+        .replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
+      setOutputValue(camelOutput);
+      setCamelCaseMsg((prevState) => ({
+        ...prevState,
+        camelCaseSuccess: true,
+      }));
+    }
   };
 
   return (

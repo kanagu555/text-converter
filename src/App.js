@@ -12,6 +12,7 @@ function App() {
   const [alertMessage, setAlertMessage] = useState({
     lowerCaseSuccess: false,
     upperCaseSuccess: false,
+    camelCaseSuccess: false,
   });
 
 
