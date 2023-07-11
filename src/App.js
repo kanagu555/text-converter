@@ -13,6 +13,7 @@ function App() {
     lowerCaseSuccess: false,
     upperCaseSuccess: false,
     camelCaseSuccess: false,
+    mixedCaseSuccess: false,
   });
 
 

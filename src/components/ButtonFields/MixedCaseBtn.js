@@ -4,17 +4,24 @@ import { AppContext } from "../../App";
 
 const MixedCaseBtn = () => {
   const mixedCaseBtnContext = useContext(AppContext);
-  const [inputValue, setOutputValue] = [
+  const [inputValue, setOutputValue, setMixedCaseMsg] = [
     mixedCaseBtnContext[0],
     mixedCaseBtnContext[3],
+    mixedCaseBtnContext[4],
   ];
 
   const toMixed = () => {
-    const mixedOutput = inputValue.split("").map((char, index) => {
-      const checkMixed = index % 2 === 0 ? char.toUpperCase() : char;
-      return checkMixed;
-    });
-    setOutputValue(mixedOutput.join(""));
+    if (inputValue) {
+      const mixedOutput = inputValue.split("").map((char, index) => {
+        const checkMixed = index % 2 === 0 ? char.toUpperCase() : char;
+        return checkMixed;
+      });
+      setOutputValue(mixedOutput.join(""));
+      setMixedCaseMsg((prevState) => ({
+        ...prevState,
+        mixedCaseSuccess: true,
+      }));
+    }
   };
 
   return (
