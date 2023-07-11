@@ -1,26 +1,28 @@
-import { Button } from '@mui/material'
-import React, { useContext } from 'react'
-import {AppContext} from './../../App'
-import {MainFormContext} from '../../../src/components/FormFields/MainForm'
+import { Button } from "@mui/material";
+import React, { useContext } from "react";
+import { AppContext } from "./../../App";
 
 function ResetBtn() {
-
-  const resetBtnContext = useContext(AppContext)
-  const resetMsgContext = useContext(MainFormContext)
-  const [setInputValue, setOutputValue] = [resetBtnContext[1], resetBtnContext[3]]
-  const resetMsg = resetMsgContext[0];
+  const resetBtnContext = useContext(AppContext);
+  const [setInputValue, setOutputValue, setSuccessMsgClear] = [
+    resetBtnContext[1],
+    resetBtnContext[3],
+    resetBtnContext[4],
+  ];
 
   const resetFunc = () => {
-    setInputValue('')
-    setOutputValue('')
-    resetMsg(false)
-  }
+    setInputValue("");
+    setOutputValue("");
+    setSuccessMsgClear({});
+  };
 
   return (
     <div className="btn-margin">
-        <Button variant="contained" color="error" onClick={resetFunc}>Reset</Button>
+      <Button variant="contained" color="error" onClick={resetFunc}>
+        Reset
+      </Button>
     </div>
-  )
+  );
 }
 
-export default ResetBtn
+export default ResetBtn;
