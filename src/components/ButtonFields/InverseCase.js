@@ -4,18 +4,25 @@ import { AppContext } from "../../App";
 
 const InverseCase = () => {
   const inverseCaseBtnContext = useContext(AppContext);
-  const [inputValue, setOutputValue] = [
+  const [inputValue, setOutputValue, setInverseCaseMsg] = [
     inverseCaseBtnContext[0],
     inverseCaseBtnContext[3],
+    inverseCaseBtnContext[4],
   ];
 
   const toInverse = () => {
-    const inverseOutput = inputValue.split("").map((char) => {
-      const checkInverse =
-        char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase();
-      return checkInverse;
-    });
-    setOutputValue(inverseOutput.join(""));
+    if (inputValue) {
+      const inverseOutput = inputValue.split("").map((char) => {
+        const checkInverse =
+          char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase();
+        return checkInverse;
+      });
+      setOutputValue(inverseOutput.join(""));
+      setInverseCaseMsg((prevState) => ({
+        ...prevState,
+        inverseCaseSuccess: true,
+      }));
+    }
   };
 
   return (

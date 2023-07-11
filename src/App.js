@@ -14,6 +14,7 @@ function App() {
     upperCaseSuccess: false,
     camelCaseSuccess: false,
     mixedCaseSuccess: false,
+    inverseCaseSuccess: false,
   });
 
 
