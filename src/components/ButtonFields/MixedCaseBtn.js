@@ -24,6 +24,7 @@ const MixedCaseBtn = () => {
         upperCaseSuccess: false,
         camelCaseSuccess: false,
         inverseCaseSuccess: false,
+        copySuccess: false,
       }));
     }
   };

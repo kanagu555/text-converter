@@ -20,6 +20,7 @@ const UpperCaseBtn = () => {
         camelCaseSuccess: false,
         mixedCaseSuccess: false,
         inverseCaseSuccess: false,
+        copySuccess: false,
       }));
     }
   };

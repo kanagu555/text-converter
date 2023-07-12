@@ -24,6 +24,7 @@ const CamelCaseBtn = () => {
         upperCaseSuccess: false,
         mixedCaseSuccess: false,
         inverseCaseSuccess: false,
+        copySuccess: false,
       }));
     }
   };

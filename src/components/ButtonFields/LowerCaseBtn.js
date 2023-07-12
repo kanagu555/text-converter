@@ -21,6 +21,7 @@ const LowerCaseBtn = () => {
         camelCaseSuccess: false,
         mixedCaseSuccess: false,
         inverseCaseSuccess: false,
+        copySuccess: false,
       }));
     }
   };

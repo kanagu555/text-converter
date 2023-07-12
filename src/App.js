@@ -15,13 +15,20 @@ function App() {
     camelCaseSuccess: false,
     mixedCaseSuccess: false,
     inverseCaseSuccess: false,
+    copySuccess: false,
   });
-
 
   return (
     <div className="bg-height">
       <AppContext.Provider
-        value={[inputValue, setInputValue, outputValue, setOutputValue, setAlertMessage, alertMessage]}
+        value={[
+          inputValue,
+          setInputValue,
+          outputValue,
+          setOutputValue,
+          setAlertMessage,
+          alertMessage,
+        ]}
       >
         <MainForm />
         <MainBtn />

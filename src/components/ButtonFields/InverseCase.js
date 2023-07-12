@@ -25,6 +25,7 @@ const InverseCase = () => {
         upperCaseSuccess: false,
         camelCaseSuccess: false,
         mixedCaseSuccess: false,
+        copySuccess: false,
       }));
     }
   };
