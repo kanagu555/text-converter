@@ -1,7 +1,7 @@
-.btn-props {
+/* .btn-props {
     text-transform: none;
     background-color: blueviolet;
-}
+} */
 
 .flex-btn-container{
     display: flex;
@@ -9,14 +9,17 @@
     align-items: center;
     justify-content: space-evenly;
     padding-top: 1rem;
+    flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 465px) {
-    .flex-btn-container {
-      display: flex;
-      flex-direction: column;
-    }
+@media (max-width: 1024px) {
+  .btn-margin {
+    margin-right: 3rem;
+  }
+}
+
+/* @media only screen and (max-width: 700vw) {
     .btn-margin {
       margin-top: 1rem;
     }
-  }
+  } */
